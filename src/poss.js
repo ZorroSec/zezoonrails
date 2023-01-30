@@ -5,11 +5,13 @@ function poss(posts){
         referrerPolicy: 'unsafe-url', 
         mode: 'no-cors',
         Headers: {
-            'Content-Type': 'application/json'
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+
         }
     }
-    fetch(url, methods).then((res)=>{
-        res.json().then(data=>{
+    fetch(url).then((res)=>{
+        res.json().then((data)=>{
             for(let i=0;i<=99;i++){
                 posts.innerHTML+=data.items[i]['titulo']
             }
