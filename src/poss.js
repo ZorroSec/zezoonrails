@@ -11,11 +11,11 @@ function poss(posts){
         }
     }
     fetch(url).then((res)=>{
-        res.json().then((data)=>{
-            for(let i=0;i<=99;i++){
-                posts.innerHTML+=data.items[i]['titulo']
-            }
-        })
+        res.json()
+    }).then((data)=>{
+        for(let i=0;i<=99;i++){
+            posts.innerHTML+=data.items[i]['titulo']
+        }
     })
 }
 
