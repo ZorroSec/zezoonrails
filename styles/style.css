@@ -14,3 +14,18 @@ header.header{
     align-items: center;
     justify-content: space-around;
 }
+.post{
+    margin: auto;
+    width: 95%;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 2.2em rgba(0,0,0,.3);
+    border-radius: 0 0 10px 10px;
+    margin-top: 10px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+}

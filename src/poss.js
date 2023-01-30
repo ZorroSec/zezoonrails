@@ -18,8 +18,18 @@ function poss(posts){
                     <div class=titulo''>
                         <h3>${data.items[i]['titulo']} </h3>
                     </div>
+                    <div class='introducao'>
+                        <i>${data.items[i]['data_publicacao']} </i>
+                    </div>
+                    <div class='introducao'>
+                        <p>${data.items[i]['introducao']} </p>
+                    </div>
+                    <div class='link'>
+                        <a href='${data.items[i]['link']}'><i>Ler mais...</i></a>
+                    </div>
                 </div>
                 `
+                console.log(data.items[i])
             }
         })
     })
