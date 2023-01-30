@@ -14,7 +14,11 @@ function poss(posts){
         res.json().then((data)=>{
             for(let i=0;i<=99;i++){
                 posts.innerHTML+=`
-                ${data.items[i]['titulo']}
+                <div class='post'>
+                    <div class=titulo''>
+                        <h3>${data.items[i]['titulo']} </h3>
+                    </div>
+                </div>
                 `
             }
         })
