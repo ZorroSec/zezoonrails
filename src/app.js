@@ -1,6 +1,4 @@
-// const posts = document.getElementById('posts')
-
 import poss from "./poss.js";
-
-// const hour = document.getElementById('hour')
-poss()
+const posts = document.getElementById('posts')
+const hour = document.getElementById('hour')
+poss(posts)
