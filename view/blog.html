@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../src/timezone.js"></script>
+    <title>blog</title>
+</head>
+<body onload="time()">
+    <header class="header">
+        <div class="logo">
+            <h2><a href="/">ZezoOnRails</a></h2>
+        </div>
+        <div class="link">
+            <a href="/zezoonrails">home</a>
+        </div>
+        <div class="link">
+            <a href="../view/about.html">about</a>
+        </div>
+    </header>
+    <div class="conteinerc">
+        <div class="addPost">
+            <div class="inputs">
+                <input type="text" name="username" id="username" placeholder="User...">
+                <br>
+                <textarea name="post" id="post" cols="70" rows="8">Hello world...</textarea>
+                <div class="btn">
+                    <button id="btn">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteinerPost">
+        <div id="posts"></div>
+    </div>
+    <br>
+    <footer>
+    </footer>
+
+    <script src="../src/addPost.js"></script>
+</body>
+</html>
